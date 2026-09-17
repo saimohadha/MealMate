@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <title>MealMate - Food Ordering App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+    🍔 <span>MealMate</span>
+      </div>
+      <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+     </nav>
+      <div class="nav-actions">
+        <input type="text" id="search-input" placeholder="Search food..." />
+
+        <button id="cart-btn">🛒</button>
+      </div>
+    </header>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">GOOD FOOD, GOOD MOOD</p>
+
+        <h1>
+          Delicious food,<br />
+          delivered to you
+        </h1>
+
+        <p class="hero-text">
+          Explore a wide variety of cuisines from your favorite restaurants.
+          Fresh ingredients. Fast delivery. Great taste.
+        </p>
+
+        <button class="primary-btn" id="order-now-btn">Order Now →</button>
+      </div>
+
+      <div class="hero-image">🍔</div>
+    </section>
+    <section class="features">
+      <article class="feature">
+        <div class="feature-icon">🚚</div>
+
+        <div class="feature-content">
+          <h3>Fast Delivery</h3>
+          <p>On time, every time</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">🌿</div>
+
+        <div class="feature-content">
+          <h3>Fresh Ingredients</h3>
+          <p>Quality you can trust</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-icon">❤️</div>
+
+        <div class="feature-content">
+          <h3>Great Taste</h3>
+          <p>Loved by thousands</p>
+        </div>
+      </article>
+    </section>
+    <section class="categories">
+      <h2>Browse by Category</h2>
+      <div class="category-grid">
+        <article class="category" data-category="Pizza">
+          <div class="emoji">🍕</div>
+          <div class="category-name">
+            <h3>Pizza</h3>
+          </div>
+        </article>
+        <article class="category" data-category="Burgers">
+          <div class="emoji">🍔</div>
+          <div class="category-name">
+            <h3>Burgers</h3>
+          </div>
+        </article>
+        <article class="category" data-category="Noodles">
+          <div class="emoji">🍜</div>
+          <div class="category-name">
+            <h3>Noodles</h3>
+          </div>
+        </article>
+        <article class="category" data-category="Indian">
+          <div class="emoji">🍛</div>
+          <div class="category-name">
+            <h3>Indian</h3>
+          </div>
+        </article>
+        <article class="category" data-category="Desserts">
+          <div class="emoji">🍰</div>
+          <div class="category-name">
+            <h3>Desserts</h3>
+          </div>
+        </article>
+        <article class="category" data-category="Drinks">
+          <div class="emoji">🥤</div>
+          <div class="category-name">
+            <h3>Drinks</h3>
+          </div>
+          </div>
+        </article>
+    </section>
+    <section class="menu" id="menu">
+      <h2>Our Food Menu</h2>
+      <div class="food-grid" id="food-container">
+      </div>
+    </section>
+    <section class="cart-section" id="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart-items-container"></div>
+      <h3 id="total">Total</h3>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </section>
+    <section class="checkout-section">
+    <h2>Checkout</h2>
+
+    <form id="checkout-form">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" required>
+
+        <label for="address">Delivery Address</label>
+        <textarea id="address" required></textarea>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+</section>
+<section class="success-section" id="success-section">
+    <h2>🎉 Order Placed Successfully!</h2>
+    <p>Thank you for ordering from MealMate ❤️</p>
+    <p>Your order will be delivered soon.</p>
+</section>
+    <script src="script.js"></script>
+  </body>
+  <footer id="contact">
+    <div class="foodie">
+      <h3>MealMate</h3>
+      <p>Delicious food delivered to your doorstep.</p>
+    </div>
+    <div class="quick-links">
+    <h3>Quick Links</h3>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+   </div>
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>foodie@example.com</p>
+      <p>+91 98765 43210</p>
+    </div>
+  </footer>
+</html>
